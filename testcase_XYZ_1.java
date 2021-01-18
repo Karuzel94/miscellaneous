@@ -49,22 +49,7 @@ public class testcase_XYZ_1 {
 
 
         //skipping additional account settings,waiting for showing this additional form
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='btn-row']/button[1]")));
-
-        Wait<WebDriver> wait2 = new FluentWait<WebDriver>(w)
-                .withTimeout(Duration.ofSeconds(30))
-                .pollingEvery(Duration.ofSeconds(3))
-                .ignoring(NoSuchElementException.class);
-
-        WebElement skip = wait2.until(new Function<WebDriver, WebElement>() {
-            public WebElement apply(WebDriver driver) {
-                if (driver.findElement(By.xpath("//div[@class='btn-row']/button[1]")).isDisplayed()) {
-                    return driver.findElement(By.cssSelector("[id='finish] h4"));
-                } else {
-                    return null;
-                }
-            }
-        });
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='btn-row']/button[1]")));
 
         w.findElement(By.xpath("//div[@class='btn-row']/button[1]")).click();
 
