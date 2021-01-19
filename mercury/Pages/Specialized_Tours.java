@@ -31,26 +31,26 @@ public class Specialized_Tours extends BasePage {
     WebElement more;
 
     public void clickHome(){
-        home.click();
+        click(home);
     }
 
     public void clickCoaches(){
-        coaches.click();
+        click(coaches);
     }
     public void clickContact(){
-        contact.click();
+        click(contact);
 
     }
     public void clickSF(){
-        sf.click();
+        click(sf);
 
     }
     public void clickSpecializedTours(){
-        tours.click();
+        click(tours);
     }
 
     public  void clickMore(){
-        more.click();
+        click(more);
     }
 
 }

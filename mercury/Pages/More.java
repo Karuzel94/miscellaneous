@@ -14,7 +14,7 @@ public class More extends BasePage {
     WebElement ret;
 
     public void clickReturn(){
-        ret.click();
+        click(ret);
     }
 
 
