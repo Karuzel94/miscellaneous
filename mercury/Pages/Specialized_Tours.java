@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Specialized_Tours extends AbstractPage {
+public class Specialized_Tours extends BasePage {
     
 
 
@@ -27,7 +27,7 @@ public class Specialized_Tours extends AbstractPage {
     @FindBy(xpath = "//span[text()='Specialized Tours']")
     WebElement tours;
 
-    @FindBy(xpath = "//a[@href='More%20of%20Where%20we%20Go.html']")
+    @FindBy(xpath = "//a[text()='More Of Where We Go....']")
     WebElement more;
 
     public void clickHome(){

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SF_Tours extends AbstractPage {
+public class SF_Tours extends BasePage  {
 
     public SF_Tours(WebDriver driver){
         super(driver);

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class More extends AbstractPage{
+public class More extends BasePage {
 
     public More(WebDriver driver){
         super(driver);

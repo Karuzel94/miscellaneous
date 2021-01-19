@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Our_Coaches extends AbstractPage {
+public class Our_Coaches extends BasePage  {
 
 
     public Our_Coaches(WebDriver driver){
