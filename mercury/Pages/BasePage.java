@@ -17,8 +17,13 @@ public class BasePage {
         this.w = new WebDriverWait(this.driver, time);
     }
 
-    public void click(WebElement element){
+    public void checkingVisibility(WebElement element) {
         w.until(ExpectedConditions.visibilityOf(element));
+
+    }
+
+    public void click(WebElement element){
+        checkingVisibility(element);
         w.until(ExpectedConditions.elementToBeClickable(element)).click();
     }
 
