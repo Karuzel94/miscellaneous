@@ -10,10 +10,10 @@ public class SF_Tours extends AbstractPage {
         super(driver);
     }
 
-    @FindBy(linkText = "Home")
+    @FindBy(xpath = "//div[@id='Navagation']/strong/a[1]/span")
     WebElement home;
 
-    @FindBy(linkText = "Our Coaches")
+    @FindBy(xpath = "//div[@id='Navagation']/strong/a[2]/span")
     WebElement coaches;
 
     @FindBy(xpath = "//div[@id='Navagation']/strong/a[3]/span")
