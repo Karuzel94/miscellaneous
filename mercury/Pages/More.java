@@ -10,11 +10,11 @@ public class More extends AbstractPage{
         super(driver);
     }
 
-    @FindBy(linkText = "Return to Specialized Tours")
+    @FindBy(xpath = "//a[@href='Specialized_Tours.html'")
     WebElement ret;
 
     public void clickReturn(){
-        click(ret);
+        ret.click();
     }
 
 

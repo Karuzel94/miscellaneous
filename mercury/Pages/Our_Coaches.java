@@ -11,38 +11,38 @@ public class Our_Coaches extends AbstractPage {
         super(driver);
     }
 
-    @FindBy(xpath = "//div[@id='Navagation']/strong/a[1]/span")
+    @FindBy(xpath = "//span[text()='Home']")
     WebElement home;
 
-    @FindBy(xpath = "//div[@id='Navagation']/strong/a[2]/span")
+    @FindBy(xpath = "//span[text()='Our Coaches']")
     WebElement coaches;
 
-    @FindBy(xpath = "//div[@id='Navagation']/strong/a[3]/span")
+    @FindBy(xpath = "//span[text()='Contact Us']")
     WebElement contact;
 
-    @FindBy(xpath = "//*[@id='Navagation']/strong/a[4]/span")
+    @FindBy(xpath = "//a[@href='Contact_Us.html']")
     WebElement sf;
 
-    @FindBy(linkText = "Specialized Tours")
+    @FindBy(xpath = "//span[text()='Specialized Tours']")
     WebElement tours;
 
     public void clickHome(){
-        click(home);
+        home.click();
     }
 
     public void clickCoaches(){
-        click(coaches);
+        coaches.click();
     }
     public void clickContact(){
-        click(contact);
+        contact.click();
 
     }
     public void clickSF(){
-        click(sf);
+        sf.click();
 
     }
     public void clickSpecializedTours(){
-        click(tours);
+        tours.click();
 
     }
 

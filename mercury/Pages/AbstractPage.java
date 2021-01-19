@@ -13,9 +13,4 @@ public class AbstractPage {
         this.driver = driver;
     }
 
-
-    public void click(WebElement element){
-        element.click();
-    }
-
 }
